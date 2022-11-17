@@ -1,0 +1,81 @@
+2022-11-08 15:41:08 [main] INFO  c.t.e.s.TwitterKafkaIngestionApplication - Starting TwitterKafkaIngestionApplication using Java 11.0.13 on Santoshs-MacBook-Air.local with PID 99010 (/Users/santoshpokhyan/dev/fsd/spring/event-driven/ed-demo/twitter-kafka-ingestion/target/classes started by santoshpokhyan in /Users/santoshpokhyan/dev/fsd/spring/event-driven/ed-demo)
+2022-11-08 15:41:08 [main] INFO  c.t.e.s.TwitterKafkaIngestionApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-08 15:41:09 [main] INFO  c.t.e.s.TwitterKafkaIngestionApplication - Started TwitterKafkaIngestionApplication in 2.004 seconds (JVM running for 3.097)
+2022-11-08 15:41:09 [main] INFO  c.t.e.s.TwitterKafkaIngestionApplication - Application started ...
+2022-11-08 15:41:09 [main] INFO  c.t.e.s.TwitterKafkaIngestionApplication - [Java, Spring, Microservices, Kafka, Elasticsearch]
+2022-11-08 15:41:09 [main] INFO  c.t.e.s.TwitterKafkaIngestionApplication - Welcome to Twitter Ingestion!!
+2022-11-08 15:41:09 [Twitter Stream consumer /  [1][initializing]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2022-11-08 15:41:09 [main] INFO  c.t.e.r.i.TwitterKafkaStreamRunner - display filtered twitter stream for keywords [Java, Spring, Microservices, Kafka, Elasticsearch]
+2022-11-08 15:41:10 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - 401:Authentication credentials (https://dev.twitter.com/pages/auth) were missing or incorrect. Ensure that you have set valid consumer key/secret, access token/secret, and the system clock is in sync.
+<html>\n<head>\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>\n<title>Error 401 Unauthorized</title>
+</head>
+<body>
+<h2>HTTP ERROR: 401</h2>
+<p>Problem accessing '/1.1/statuses/filter.json'. Reason:
+<pre>    Unauthorized</pre>
+</body>
+</html>
+
+2022-11-08 15:41:10 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 10000 milliseconds
+2022-11-08 15:41:20 [Twitter Stream consumer /  [1][Waiting for 10000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2022-11-08 15:41:21 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - 401:Authentication credentials (https://dev.twitter.com/pages/auth) were missing or incorrect. Ensure that you have set valid consumer key/secret, access token/secret, and the system clock is in sync.
+<html>\n<head>\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>\n<title>Error 401 Unauthorized</title>
+</head>
+<body>
+<h2>HTTP ERROR: 401</h2>
+<p>Problem accessing '/1.1/statuses/filter.json'. Reason:
+<pre>    Unauthorized</pre>
+</body>
+</html>
+
+2022-11-08 15:41:21 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 20000 milliseconds
+2022-11-08 15:41:41 [Twitter Stream consumer /  [1][Waiting for 20000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2022-11-08 15:41:41 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - 401:Authentication credentials (https://dev.twitter.com/pages/auth) were missing or incorrect. Ensure that you have set valid consumer key/secret, access token/secret, and the system clock is in sync.
+<html>\n<head>\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>\n<title>Error 401 Unauthorized</title>
+</head>
+<body>
+<h2>HTTP ERROR: 401</h2>
+<p>Problem accessing '/1.1/statuses/filter.json'. Reason:
+<pre>    Unauthorized</pre>
+</body>
+</html>
+
+2022-11-08 15:41:41 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 40000 milliseconds
+2022-11-08 15:41:44 [SpringApplicationShutdownHook] INFO  c.t.e.r.i.TwitterKafkaStreamRunner - cleaning twitter stream
+2022-11-08 16:05:51 [main] INFO  c.t.e.s.TwitterKafkaIngestionApplication - Starting TwitterKafkaIngestionApplication using Java 11.0.13 on Santoshs-MacBook-Air.local with PID 6448 (/Users/santoshpokhyan/dev/fsd/spring/event-driven/ed-demo/twitter-kafka-ingestion/target/classes started by santoshpokhyan in /Users/santoshpokhyan/dev/fsd/spring/event-driven/ed-demo)
+2022-11-08 16:05:51 [main] INFO  c.t.e.s.TwitterKafkaIngestionApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-08 16:05:52 [main] INFO  c.t.e.s.TwitterKafkaIngestionApplication - Started TwitterKafkaIngestionApplication in 1.821 seconds (JVM running for 2.823)
+2022-11-08 16:05:52 [main] INFO  c.t.e.s.TwitterKafkaIngestionApplication - Application started ...
+2022-11-08 16:05:52 [main] INFO  c.t.e.s.TwitterKafkaIngestionApplication - [Java, Spring, Microservices, Kafka, Elasticsearch]
+2022-11-08 16:05:52 [main] INFO  c.t.e.s.TwitterKafkaIngestionApplication - Welcome to Twitter Ingestion!!
+2022-11-08 16:05:52 [Twitter Stream consumer /  [1][initializing]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2022-11-08 16:05:52 [main] INFO  c.t.e.r.i.TwitterKafkaStreamRunner - display filtered twitter stream for keywords [Java, Spring, Microservices, Kafka, Elasticsearch]
+2022-11-08 16:05:53 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - 403:The request is understood, but it has been refused. An accompanying error message will explain why. This code is used when requests are being denied due to update limits (https://support.twitter.com/articles/15364-about-twitter-limits-update-api-dm-and-following).
+<html>\n<head>\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>\n<title>Error 403 
+Please use V2 filtered and sample volume stream as alternatives
+</title>
+</head>
+<body>
+<h2>HTTP ERROR: 403</h2>
+<p>Problem accessing '/1.1/statuses/filter.json'. Reason:
+<pre>    
+Please use V2 filtered and sample volume stream as alternatives
+</pre>
+</body>
+</html>
+
+2022-11-08 16:05:53 [Twitter Stream consumer /  [1][Establishing connection]] WARN  twitter4j.TwitterStreamImpl - This account is not in required role. 403:The request is understood, but it has been refused. An accompanying error message will explain why. This code is used when requests are being denied due to update limits (https://support.twitter.com/articles/15364-about-twitter-limits-update-api-dm-and-following).
+<html>\n<head>\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>\n<title>Error 403 
+Please use V2 filtered and sample volume stream as alternatives
+</title>
+</head>
+<body>
+<h2>HTTP ERROR: 403</h2>
+<p>Problem accessing '/1.1/statuses/filter.json'. Reason:
+<pre>    
+Please use V2 filtered and sample volume stream as alternatives
+</pre>
+</body>
+</html>
+
+2022-11-08 16:05:53 [SpringApplicationShutdownHook] INFO  c.t.e.r.i.TwitterKafkaStreamRunner - cleaning twitter stream

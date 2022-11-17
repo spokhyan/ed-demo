@@ -1,0 +1,53 @@
+2022-11-01 10:54:21 [main] INFO  c.t.e.s.TwitterKafkaIngestionApplication - Starting TwitterKafkaIngestionApplication using Java 11.0.13 on Santoshs-MacBook-Air.local with PID 94894 (/Users/santoshpokhyan/dev/fsd/spring/event-driven/ed-demo/twitter-kafka-ingestion/target/classes started by santoshpokhyan in /Users/santoshpokhyan/dev/fsd/spring/event-driven/ed-demo)
+2022-11-01 10:54:21 [main] INFO  c.t.e.s.TwitterKafkaIngestionApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-01 10:54:22 [main] INFO  c.t.e.s.TwitterKafkaIngestionApplication - Started TwitterKafkaIngestionApplication in 1.745 seconds (JVM running for 2.75)
+2022-11-01 10:54:22 [main] INFO  c.t.e.s.TwitterKafkaIngestionApplication - Application started ...
+2022-11-01 10:54:22 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-11-01 10:54:22 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:774)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:755)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.techbytes.ed.services.TwitterKafkaIngestionApplication.main(TwitterKafkaIngestionApplication.java:27)
+Caused by: java.lang.NullPointerException: null
+	at com.techbytes.ed.services.TwitterKafkaIngestionApplication.run(TwitterKafkaIngestionApplication.java:35)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:771)
+	... 5 common frames omitted
+2022-11-01 10:55:33 [main] INFO  c.t.e.s.TwitterKafkaIngestionApplication - Starting TwitterKafkaIngestionApplication using Java 11.0.13 on Santoshs-MacBook-Air.local with PID 95019 (/Users/santoshpokhyan/dev/fsd/spring/event-driven/ed-demo/twitter-kafka-ingestion/target/classes started by santoshpokhyan in /Users/santoshpokhyan/dev/fsd/spring/event-driven/ed-demo)
+2022-11-01 10:55:33 [main] INFO  c.t.e.s.TwitterKafkaIngestionApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-01 10:55:34 [main] INFO  c.t.e.s.TwitterKafkaIngestionApplication - Started TwitterKafkaIngestionApplication in 1.849 seconds (JVM running for 2.825)
+2022-11-01 10:55:34 [main] INFO  c.t.e.s.TwitterKafkaIngestionApplication - Application started ...
+2022-11-01 10:57:11 [main] INFO  c.t.e.s.TwitterKafkaIngestionApplication - Starting TwitterKafkaIngestionApplication using Java 11.0.13 on Santoshs-MacBook-Air.local with PID 95190 (/Users/santoshpokhyan/dev/fsd/spring/event-driven/ed-demo/twitter-kafka-ingestion/target/classes started by santoshpokhyan in /Users/santoshpokhyan/dev/fsd/spring/event-driven/ed-demo)
+2022-11-01 10:57:11 [main] INFO  c.t.e.s.TwitterKafkaIngestionApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-01 10:57:12 [main] INFO  c.t.e.s.TwitterKafkaIngestionApplication - Started TwitterKafkaIngestionApplication in 1.732 seconds (JVM running for 3.18)
+2022-11-01 10:57:12 [main] INFO  c.t.e.s.TwitterKafkaIngestionApplication - Application started ...
+2022-11-01 10:57:12 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-11-01 10:57:12 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:774)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:755)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.techbytes.ed.services.TwitterKafkaIngestionApplication.main(TwitterKafkaIngestionApplication.java:27)
+Caused by: java.lang.NullPointerException: null
+	at com.techbytes.ed.services.TwitterKafkaIngestionApplication.run(TwitterKafkaIngestionApplication.java:35)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:771)
+	... 5 common frames omitted
+2022-11-01 11:00:15 [main] INFO  c.t.e.s.TwitterKafkaIngestionApplication - Starting TwitterKafkaIngestionApplication using Java 11.0.13 on Santoshs-MacBook-Air.local with PID 95524 (/Users/santoshpokhyan/dev/fsd/spring/event-driven/ed-demo/twitter-kafka-ingestion/target/classes started by santoshpokhyan in /Users/santoshpokhyan/dev/fsd/spring/event-driven/ed-demo)
+2022-11-01 11:00:15 [main] INFO  c.t.e.s.TwitterKafkaIngestionApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-01 11:00:16 [main] INFO  c.t.e.s.TwitterKafkaIngestionApplication - Started TwitterKafkaIngestionApplication in 1.951 seconds (JVM running for 2.772)
+2022-11-01 11:00:16 [main] INFO  c.t.e.s.TwitterKafkaIngestionApplication - Application started ...
+2022-11-01 11:00:16 [main] INFO  c.t.e.s.TwitterKafkaIngestionApplication - [Java, Spring, Microservices, Kafka, Elasticsearch]
+2022-11-01 11:12:31 [main] INFO  c.t.e.s.TwitterKafkaIngestionApplication - Starting TwitterKafkaIngestionApplication using Java 11.0.13 on Santoshs-MacBook-Air.local with PID 96819 (/Users/santoshpokhyan/dev/fsd/spring/event-driven/ed-demo/twitter-kafka-ingestion/target/classes started by santoshpokhyan in /Users/santoshpokhyan/dev/fsd/spring/event-driven/ed-demo)
+2022-11-01 11:12:31 [main] INFO  c.t.e.s.TwitterKafkaIngestionApplication - No active profile set, falling back to 1 default profile: "default"
+2022-11-01 11:12:32 [main] INFO  c.t.e.s.TwitterKafkaIngestionApplication - Started TwitterKafkaIngestionApplication in 1.715 seconds (JVM running for 2.595)
+2022-11-01 11:12:32 [main] INFO  c.t.e.s.TwitterKafkaIngestionApplication - Application started ...
+2022-11-01 11:12:32 [main] INFO  c.t.e.s.TwitterKafkaIngestionApplication - [Java, Spring, Microservices, Kafka, Elasticsearch]
+2022-11-01 11:12:32 [main] INFO  c.t.e.s.TwitterKafkaIngestionApplication - Welcome to Twitter Ingestion!!

@@ -2,6 +2,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
+	<modules>
+		<module>twitter-kafka-ingestion</module>
+        <module>ed-app-config</module>
+    </modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
@@ -14,14 +18,26 @@
 	<name>ed-demo</name>
 	<description>Event Driven Microservices Demo project for Spring Boot</description>
 	<packaging>pom</packaging>
+
+
 	<properties>
 		<java.version>11</java.version>
 		<springboot.version>2.7.5</springboot.version>
 		<maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
+		<twitter4j-stream.version>4.0.7</twitter4j-stream.version>
+		<lombok.version>1.18.24</lombok.version>
+		<httpclient.versiion>4.5.13</httpclient.versiion>
+		<json.version>20211205</json.version>
+		<config-project-version>0.0.1-SNAPSHOT</config-project-version>
 	</properties>
 
 	<dependencyManagement>
 		<dependencies>
+			<dependency>
+				<groupId>com.techbytes</groupId>
+				<artifactId>ed-app-config</artifactId>
+				<version>${config-project-version}</version>
+			</dependency>
 			<dependency>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-starter</artifactId>
@@ -34,6 +50,29 @@
 				<version>${springboot.version}</version>
 				<scope>test</scope>
 			</dependency>
+			<dependency>
+				<groupId>org.twitter4j</groupId>
+				<artifactId>twitter4j-stream</artifactId>
+				<version>${twitter4j-stream.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.httpcomponents</groupId>
+				<artifactId>httpclient</artifactId>
+				<version>${httpclient.versiion}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.json</groupId>
+				<artifactId>json</artifactId>
+				<version>${json.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.projectlombok</groupId>
+				<artifactId>lombok</artifactId>
+				<version>${lombok.version}</version>
+				<scope>provided</scope>
+			</dependency>
+
 		</dependencies>
 	</dependencyManagement>
 

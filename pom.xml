@@ -5,7 +5,9 @@
 	<modules>
 		<module>twitter-kafka-ingestion</module>
         <module>ed-app-config</module>
-    </modules>
+        <module>kafka</module>
+		<module>common-config</module>
+	</modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
@@ -29,7 +31,20 @@
 		<httpclient.versiion>4.5.13</httpclient.versiion>
 		<json.version>20211205</json.version>
 		<config-project-version>0.0.1-SNAPSHOT</config-project-version>
+		<avro-version>1.11.0</avro-version>
+		<spring-kafka-version>2.9.0</spring-kafka-version>
+		<spring-retry-version>1.3.4</spring-retry-version>
+		<springboot-aop.version>2.7.2</springboot-aop.version>
+		<common-config.version>0.0.1-SNAPSHOT</common-config.version>
+		<kafka-avro-serializer.version>7.3.0</kafka-avro-serializer.version>
 	</properties>
+
+	<repositories>
+		<repository>
+			<id>confluent</id>
+			<url>https://packages.confluent.io/maven/</url>
+		</repository>
+	</repositories>
 
 	<dependencyManagement>
 		<dependencies>
@@ -37,6 +52,16 @@
 				<groupId>com.techbytes</groupId>
 				<artifactId>ed-app-config</artifactId>
 				<version>${config-project-version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.techbytes</groupId>
+				<artifactId>common-config</artifactId>
+				<version>${common-config.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.techbytes</groupId>
+				<artifactId>kafka-model</artifactId>
+				<version>${common-config.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.boot</groupId>
@@ -73,6 +98,54 @@
 				<scope>provided</scope>
 			</dependency>
 
+			<dependency>
+				<groupId>org.apache.avro</groupId>
+				<artifactId>avro</artifactId>
+				<version>${avro-version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.kafka</groupId>
+				<artifactId>spring-kafka</artifactId>
+				<version>${spring-kafka-version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.retry</groupId>
+				<artifactId>spring-retry</artifactId>
+				<version>${spring-retry-version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-aop</artifactId>
+				<version>${springboot-aop.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-webflux</artifactId>
+				<version>${springboot.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.confluent</groupId>
+				<artifactId>kafka-avro-serializer</artifactId>
+				<version>${kafka-avro-serializer.version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>org.slf4j</groupId>
+						<artifactId>slf4j-log4j12</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>log4j</groupId>
+						<artifactId>log4j</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>io.swagger</groupId>
+						<artifactId>swagger-annotations</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>io.swagger</groupId>
+						<artifactId>swagger-core</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 

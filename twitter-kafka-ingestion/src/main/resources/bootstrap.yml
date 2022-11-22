@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: twitter-kafka-ingestion
+  profiles:
+    active: twitter-kafka
+  cloud:
+    config:
+      name: twitter-kafka-ingestion,config-client
+      uri: http://localhost:8888/

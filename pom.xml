@@ -10,6 +10,7 @@
 		<module>kafka/kafka-admin</module>
 		<module>kafka/kafka-producer</module>
 		<module>common-config</module>
+		<module>config-server</module>
 	</modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -39,6 +40,8 @@
 		<springboot-aop.version>2.7.2</springboot-aop.version>
 		<common-config.version>0.0.1-SNAPSHOT</common-config.version>
 		<kafka-avro-serializer.version>7.3.0</kafka-avro-serializer.version>
+		<spring-cloud.version>3.1.5</spring-cloud.version>
+		<spring-cloud-dependencies.version>2021.0.5</spring-cloud-dependencies.version>
 	</properties>
 
 	<repositories>
@@ -135,6 +138,24 @@
 				<artifactId>spring-boot-starter-webflux</artifactId>
 				<version>${springboot.version}</version>
 			</dependency>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-config-server</artifactId>
+				<version>${spring-cloud.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>${spring-cloud-dependencies.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-starter-config</artifactId>
+				<version>${spring-cloud.version}</version>
+			</dependency>
+
 			<dependency>
 				<groupId>io.confluent</groupId>
 				<artifactId>kafka-avro-serializer</artifactId>

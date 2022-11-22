@@ -6,6 +6,9 @@
 		<module>twitter-kafka-ingestion</module>
         <module>ed-app-config</module>
         <module>kafka</module>
+		<module>kafka/kafka-model</module>
+		<module>kafka/kafka-admin</module>
+		<module>kafka/kafka-producer</module>
 		<module>common-config</module>
 	</modules>
 	<parent>
@@ -30,7 +33,6 @@
 		<lombok.version>1.18.24</lombok.version>
 		<httpclient.versiion>4.5.13</httpclient.versiion>
 		<json.version>20211205</json.version>
-		<config-project-version>0.0.1-SNAPSHOT</config-project-version>
 		<avro-version>1.11.0</avro-version>
 		<spring-kafka-version>2.9.0</spring-kafka-version>
 		<spring-retry-version>1.3.4</spring-retry-version>
@@ -51,17 +53,27 @@
 			<dependency>
 				<groupId>com.techbytes</groupId>
 				<artifactId>ed-app-config</artifactId>
-				<version>${config-project-version}</version>
+				<version>${project.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.techbytes</groupId>
 				<artifactId>common-config</artifactId>
-				<version>${common-config.version}</version>
+				<version>${project.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.techbytes</groupId>
 				<artifactId>kafka-model</artifactId>
-				<version>${common-config.version}</version>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.techbytes</groupId>
+				<artifactId>kafka-admin</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.techbytes</groupId>
+				<artifactId>kafka-producer</artifactId>
+				<version>${project.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.boot</groupId>

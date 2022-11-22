@@ -38,7 +38,7 @@ public class KafkaProducerConfig<K extends Serializable, V extends SpecificRecor
                 kafkaProducerDataConfig.getBatchSizeBoostFactor());
         props.put(ProducerConfig.LINGER_MS_CONFIG, kafkaProducerDataConfig.getLingerMs());
         props.put(ProducerConfig.COMPRESSION_TYPE_CONFIG, kafkaProducerDataConfig.getCompressionType());
-        props.put(ProducerConfig.ACKS_CONFIG, kafkaProducerDataConfig.getAck());
+        props.put(ProducerConfig.ACKS_CONFIG, kafkaProducerDataConfig.getAcks());
         props.put(ProducerConfig.REQUEST_TIMEOUT_MS_CONFIG, kafkaProducerDataConfig.getRequestTimeoutMs());
         props.put(ProducerConfig.RETRIES_CONFIG, kafkaProducerDataConfig.getRetryCount());
 

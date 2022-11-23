@@ -3,6 +3,6 @@
     <property name="DEV_HOME" value="./twitter-kafka-ingestion/logs"/>
     <property name="APP_NAME" value="twitter-kafka-ingestion"/>
 
-    <include resource="common-logback.xml"
+    <include resource="common-logback.xml"/>
 
 </configuration>

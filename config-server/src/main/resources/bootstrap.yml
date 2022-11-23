@@ -5,6 +5,13 @@ spring:
     config:
       server:
         git:
-          uri: file://home/spokhyan/dev/src/fsd/spring/event-driven/ed-demo/config-server
+          uri: https://github.com/spokhyan/spring-cloud-config-server-repo.git
+          username: spokhyan
+          password: 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
+          default-label: master
           clone-on-start: true
       fail-fast: true
+  security:
+    user:
+      name: ed-cloud-user
+      password: edCloud_Pwd

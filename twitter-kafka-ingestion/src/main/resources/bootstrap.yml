@@ -2,8 +2,10 @@ spring:
   application:
     name: twitter-kafka-ingestion
   profiles:
-    active: twitter-kafka
+    active: twitter_kafka
   cloud:
     config:
       name: twitter-kafka-ingestion,config-client
       uri: http://localhost:8888/
+      username: ed-cloud-user
+      password: edCloud_Pwd

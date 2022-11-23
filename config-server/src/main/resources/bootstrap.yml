@@ -14,4 +14,7 @@ spring:
   security:
     user:
       name: ed-cloud-user
-      password: edCloud_Pwd
+      password: ENC(Vtq56a8JRAgLQYZ9pf7dRjv3LjWF275rYBZb+cTs2IQNiUZPZ5V7PY86X2E1BxGQ)
+jasypt:
+  encryptor:
+    password: Demo_Pwd!2020

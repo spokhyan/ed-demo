@@ -6168,3 +6168,222 @@ https://t.co/n4rtS0uuLW https://t.co/ZfI39GIwe1 sending to kafka topic twitter-t
 Hal Borland
 🎬 naturesms https://t.co/ucnU7RN1tN sending to kafka topic twitter-topic
 2022-11-23 08:07:30 [main] INFO  c.t.e.k.p.s.i.TwitterKafkaProducer - Sending message='{"userId": 90644365, "id": 1595403633688023043, "text": "RT @ramblingsloa: No winter lasts forever; no spring skips its turn.\n\nHal Borland\n🎬 naturesms https://t.co/ucnU7RN1tN", "createdAt": 1669208842000}' to topic='twitter-topic'
+2022-11-23 20:03:55 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-11-23 20:03:56 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888/
+2022-11-23 20:03:57 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=twitter-kafka-ingestion,config-client, profiles=[twitter_kafka], label=null, version=29eb6b8b91ce4e29ddaa05f2bd98325357f5ed2d, state=null
+2022-11-23 20:03:57 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/spokhyan/spring-cloud-config-server-repo.git/config-client-twitter_kafka.yml'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/spokhyan/spring-cloud-config-server-repo.git/config-client.yml'}]
+2022-11-23 20:03:57 [main] INFO  c.t.e.s.TwitterKafkaIngestionApplication - The following profiles are active: twitter_kafka
+2022-11-23 20:03:58 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=1540064b-edfb-38a2-9430-47eb2e00f02d
+2022-11-23 20:03:59 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-23 20:03:59 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 127000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2022-11-23 20:03:59 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.7.1
+2022-11-23 20:03:59 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 61dbce85d0d41457
+2022-11-23 20:03:59 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1669251839688
+2022-11-23 20:04:00 [main] INFO  o.s.b.a.s.r.ReactiveUserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 06343789-d54e-4d16-9b0e-193454f53213
+
+2022-11-23 20:04:00 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port 8080
+2022-11-23 20:04:00 [main] INFO  c.t.e.s.TwitterKafkaIngestionApplication - Started TwitterKafkaIngestionApplication in 6.503 seconds (JVM running for 7.704)
+2022-11-23 20:04:00 [main] INFO  o.s.b.a.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
+2022-11-23 20:04:00 [main] INFO  c.t.e.s.TwitterKafkaIngestionApplication - Application started ...
+2022-11-23 20:04:00 [main] INFO  c.t.e.k.a.c.client.KafkaAdminClient - Creating 1 topics(s), attempt 0
+2022-11-23 20:04:01 [main] INFO  c.t.e.i.impl.KafkaStreamInitializer - Topics with name twitter-topic is ready for operations!
+2022-11-23 20:04:01 [main] INFO  c.t.e.r.i.TwitterV2KafkaStreamRunner - twitterConfigData.Welcome to Twitter Ingestion!!
+2022-11-23 20:04:01 [main] INFO  c.t.e.r.i.TwitterV2KafkaStreamRunner - bearerToken: AAAAAAAAAAAAAAAAAAAAAEzJiwEAAAAATgOuimAT5naVv4ucCWD1xFmPr%2FA%3Di7HkSnHG3naZ6cQPmQd6pM20oSi7Iw1pkAH9pCLsZCn2iaADAc
+2022-11-23 20:04:01 [main] INFO  c.t.e.r.i.TwitterV2KafkaStreamRunner - Filter created for twittwr keywords: [Java, Spring, Microservices, Kafka, Elasticsearch]
+2022-11-23 20:04:01 [main] INFO  c.t.e.r.i.TwitterV2KafkaStreamRunner - Filter created for twittwr keywords: {Java=keyword: Java, Elasticsearch=keyword: Elasticsearch, Kafka=keyword: Kafka, Spring=keyword: Spring, Microservices=keyword: Microservices}
+2022-11-23 20:04:02 [main] INFO  c.t.e.r.impl.TwitterV2StreamHelper - existingRules.size(): 5
+2022-11-23 20:04:03 [main] INFO  c.t.e.r.impl.TwitterV2StreamHelper - rules: {Java=keyword: Java, Elasticsearch=keyword: Elasticsearch, Kafka=keyword: Kafka, Spring=keyword: Spring, Microservices=keyword: Microservices}
+2022-11-23 20:04:03 [main] INFO  c.t.e.r.impl.TwitterV2StreamHelper - body : [Content-Type: text/plain; charset=ISO-8859-1,Content-Length: 262,Chunked: false]httpPost POST https://api.twitter.com/2/tweets/search/stream/rules HTTP/1.1
+2022-11-23 20:04:05 [main] INFO  c.t.e.r.impl.TwitterV2StreamHelper - response HttpResponseProxy{HTTP/1.1 201 Created [date: Thu, 24 Nov 2022 01:04:05 UTC, perf: 7626143928, server: tsa_b, set-cookie: guest_id_marketing=v1%3A166925184375892775; Max-Age=63072000; Expires=Sat, 23 Nov 2024 01:04:05 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None, set-cookie: guest_id_ads=v1%3A166925184375892775; Max-Age=63072000; Expires=Sat, 23 Nov 2024 01:04:05 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None, set-cookie: personalization_id="v1_q80RQ3yq+zvqQyltvZ8mIg=="; Max-Age=63072000; Expires=Sat, 23 Nov 2024 01:04:05 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None, set-cookie: guest_id=v1%3A166925184375892775; Max-Age=63072000; Expires=Sat, 23 Nov 2024 01:04:05 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None, content-type: application/json; charset=utf-8, cache-control: no-cache, no-store, max-age=0, x-access-level: read, x-frame-options: SAMEORIGIN, x-transaction-id: 117f2450e0984c77, x-xss-protection: 0, x-rate-limit-limit: 50, x-rate-limit-reset: 1669252742, content-disposition: attachment; filename=json.json, x-content-type-options: nosniff, x-rate-limit-remaining: 48, strict-transport-security: max-age=631138519, x-response-time: 1261, x-connection-hash: ae1776c2960fceb7aa77b44386d1ef3cb321e57980304ba0981541b096250dc4] org.apache.http.client.entity.DecompressingEntity@3ec7ad61}
+2022-11-23 20:04:05 [main] INFO  c.t.e.r.impl.TwitterV2StreamHelper - Created rules for twitter stream {Java=keyword: Java, Elasticsearch=keyword: Elasticsearch, Kafka=keyword: Kafka, Spring=keyword: Spring, Microservices=keyword: Microservices}
+2022-11-23 20:04:05 [main] INFO  c.t.e.r.impl.TwitterV2StreamHelper - Created rules for twitter stream Java
+2022-11-23 20:04:05 [main] INFO  c.t.e.r.impl.TwitterV2StreamHelper - bearerToken: AAAAAAAAAAAAAAAAAAAAAEzJiwEAAAAATgOuimAT5naVv4ucCWD1xFmPr%2FA%3Di7HkSnHG3naZ6cQPmQd6pM20oSi7Iw1pkAH9pCLsZCn2iaADAc
+2022-11-23 20:04:05 [main] INFO  c.t.e.r.impl.TwitterV2StreamHelper - httpGetGET https://api.twitter.com/2/tweets/search/stream?tweet.fields=created_at&expansions=author_id HTTP/1.1
+2022-11-23 20:04:05 [main] INFO  c.t.e.r.impl.TwitterV2StreamHelper - response from Twitter: HttpResponseProxy{HTTP/1.1 200 OK [date: Thu, 24 Nov 2022 01:04:05 UTC, perf: 7626143928, server: tsa_b, set-cookie: guest_id_marketing=v1%3A166925184518883956; Max-Age=63072000; Expires=Sat, 23 Nov 2024 01:04:05 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None, set-cookie: guest_id_ads=v1%3A166925184518883956; Max-Age=63072000; Expires=Sat, 23 Nov 2024 01:04:05 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None, set-cookie: personalization_id="v1_s+lIm+jerHmcRBEiLmJwkg=="; Max-Age=63072000; Expires=Sat, 23 Nov 2024 01:04:05 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None, set-cookie: guest_id=v1%3A166925184518883956; Max-Age=63072000; Expires=Sat, 23 Nov 2024 01:04:05 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None, cache-control: no-cache, no-store, max-age=0, x-access-level: read, x-frame-options: SAMEORIGIN, x-transaction-id: d67259e7a08e4791, x-xss-protection: 0, x-rate-limit-limit: 50, x-rate-limit-reset: 1669252745, x-content-type-options: nosniff, x-rate-limit-remaining: 49, strict-transport-security: max-age=631138519, x-response-time: 227, x-connection-hash: 9c096529ebd688329f1bb6a40253fbbf9139a62b5a47c37ae735745a530ec5f3, transfer-encoding: chunked] org.apache.http.client.entity.DecompressingEntity@12e2f5ab}
+2022-11-23 20:04:20 [main] INFO  c.t.e.l.TwitterKafkaStatusListener - Received status text RT @realzaidzayn: BREAKING 🇮🇩 :The death toll from an earthquake on Indonesia's main island of Java jumped to 268 on Tuesday, as rescuers s… sending to kafka topic twitter-topic
+2022-11-23 20:04:20 [main] INFO  c.t.e.k.p.s.i.TwitterKafkaProducer - Sending message='{"userId": 768569699466616832, "id": 1595583996980875275, "text": "RT @realzaidzayn: BREAKING 🇮🇩 :The death toll from an earthquake on Indonesia's main island of Java jumped to 268 on Tuesday, as rescuers s\u2026", "createdAt": 1669251844000}' to topic='twitter-topic'
+2022-11-23 20:04:20 [main] INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+	acks = -1
+	batch.size = 1638400
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = snappy
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	internal.auto.downgrade.txn.commit = true
+	key.serializer = class org.apache.kafka.common.serialization.LongSerializer
+	linger.ms = 5
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 60000
+	retries = 5
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 127000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class io.confluent.kafka.serializers.KafkaAvroSerializer
+
+2022-11-23 20:04:20 [main] INFO  i.c.k.s.KafkaAvroSerializerConfig - KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	use.latest.version = false
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2022-11-23 20:04:20 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.7.1
+2022-11-23 20:04:20 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 61dbce85d0d41457
+2022-11-23 20:04:20 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1669251860789
+2022-11-23 20:04:20 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: pi-Q02T7TdGGdYcY0em_2w
+2022-11-23 20:04:21 [main] INFO  c.t.e.l.TwitterKafkaStatusListener - Received status text RT @Kafka_0666: 去年依頼で描いたイラスト&漫画
+の完成版が届きました😊
+無事に発行まで取り付けたようで、
+良かった、良かった✨
+編集の皆様お疲れさまでした😊 https://t.co/dUKJ2Govfz sending to kafka topic twitter-topic
+2022-11-23 20:04:21 [main] INFO  c.t.e.k.p.s.i.TwitterKafkaProducer - Sending message='{"userId": 1382717090, "id": 1595583997123256320, "text": "RT @Kafka_0666: 去年依頼で描いたイラスト&漫画\nの完成版が届きました😊\n無事に発行まで取り付けたようで、\n良かった、良かった✨\n編集の皆様お疲れさまでした😊 https://t.co/dUKJ2Govfz", "createdAt": 1669251844000}' to topic='twitter-topic'
+2022-11-23 20:04:21 [main] INFO  c.t.e.l.TwitterKafkaStatusListener - Received status text RT @saintdesgarcons: balmain -spring 2019🖤 https://t.co/B8lcxGeDCL sending to kafka topic twitter-topic
+2022-11-23 20:04:21 [main] INFO  c.t.e.k.p.s.i.TwitterKafkaProducer - Sending message='{"userId": 2273535913, "id": 1595583999572934656, "text": "RT @saintdesgarcons: balmain -spring 2019🖤 https://t.co/B8lcxGeDCL", "createdAt": 1669251844000}' to topic='twitter-topic'
+2022-11-23 20:04:21 [main] INFO  c.t.e.l.TwitterKafkaStatusListener - Received status text RT @U_are_my_spring: 221118 #영탁 탁쇼 서울 앵콜 첫콘
+우리 정말 나쁘다 (1) https://t.co/wMoouyLNYB sending to kafka topic twitter-topic
+2022-11-23 20:04:21 [main] INFO  c.t.e.k.p.s.i.TwitterKafkaProducer - Sending message='{"userId": 1513821654912479235, "id": 1595584008716701696, "text": "RT @U_are_my_spring: 221118 #영탁 탁쇼 서울 앵콜 첫콘\n우리 정말 나쁘다 (1) https://t.co/wMoouyLNYB", "createdAt": 1669251846000}' to topic='twitter-topic'
+2022-11-23 20:04:21 [main] INFO  c.t.e.l.TwitterKafkaStatusListener - Received status text RT @spring_nwinter: he's so https://t.co/MLSUfN8Nmj sending to kafka topic twitter-topic
+2022-11-23 20:04:21 [main] INFO  c.t.e.k.p.s.i.TwitterKafkaProducer - Sending message='{"userId": 2696357104, "id": 1595584008284430336, "text": "RT @spring_nwinter: he's so https://t.co/MLSUfN8Nmj", "createdAt": 1669251846000}' to topic='twitter-topic'
+2022-11-23 20:04:21 [main] INFO  c.t.e.l.TwitterKafkaStatusListener - Received status text @cherylnatsu 而且都是农村过去的打工人 sending to kafka topic twitter-topic
+2022-11-23 20:04:21 [main] INFO  c.t.e.k.p.s.i.TwitterKafkaProducer - Sending message='{"userId": 3061267364, "id": 1595584009991438336, "text": "@cherylnatsu 而且都是农村过去的打工人", "createdAt": 1669251847000}' to topic='twitter-topic'
+2022-11-23 20:04:21 [main] INFO  c.t.e.l.TwitterKafkaStatusListener - Received status text Kyle Crane Spring Macaulay #东莞 Beryl Defoe #长沙 Taylor Barton #天津  Joseph Charlotte https://t.co/3VNfoQnOzM sending to kafka topic twitter-topic
+2022-11-23 20:04:21 [main] INFO  c.t.e.k.p.s.i.TwitterKafkaProducer - Sending message='{"userId": 1586374937983565828, "id": 1595584011471945728, "text": "Kyle Crane Spring Macaulay #东莞 Beryl Defoe #长沙 Taylor Barton #天津  Joseph Charlotte https://t.co/3VNfoQnOzM", "createdAt": 1669251847000}' to topic='twitter-topic'
+2022-11-23 20:04:21 [main] INFO  c.t.e.l.TwitterKafkaStatusListener - Received status text RT @TheNotoriousMMA: The knee into the eye socket was illegal yes, from this position. A beauty tho. Never before seen shot. Like many of m… sending to kafka topic twitter-topic
+2022-11-23 20:04:21 [main] INFO  c.t.e.k.p.s.i.TwitterKafkaProducer - Sending message='{"userId": 1491976443148095499, "id": 1595584016727826432, "text": "RT @TheNotoriousMMA: The knee into the eye socket was illegal yes, from this position. A beauty tho. Never before seen shot. Like many of m\u2026", "createdAt": 1669251848000}' to topic='twitter-topic'
+2022-11-23 20:04:21 [main] INFO  c.t.e.l.TwitterKafkaStatusListener - Received status text Se fosse C não tinha acontecido essas coisas https://t.co/6NJeNaOjsd sending to kafka topic twitter-topic
+2022-11-23 20:04:21 [main] INFO  c.t.e.k.p.s.i.TwitterKafkaProducer - Sending message='{"userId": 78790303, "id": 1595584021857468416, "text": "Se fosse C não tinha acontecido essas coisas https://t.co/6NJeNaOjsd", "createdAt": 1669251849000}' to topic='twitter-topic'
+2022-11-23 20:04:21 [main] INFO  c.t.e.l.TwitterKafkaStatusListener - Received status text Garden range list spring writer couple red describe. https://t.co/vOjIo4o27q sending to kafka topic twitter-topic
+2022-11-23 20:04:21 [main] INFO  c.t.e.k.p.s.i.TwitterKafkaProducer - Sending message='{"userId": 1582913941813936134, "id": 1595584025376063488, "text": "Garden range list spring writer couple red describe. https://t.co/vOjIo4o27q", "createdAt": 1669251850000}' to topic='twitter-topic'
+2022-11-23 20:04:21 [main] INFO  c.t.e.l.TwitterKafkaStatusListener - Received status text @sekisei_inka いんかちゃんパソコン強そう！ sending to kafka topic twitter-topic
+2022-11-23 20:04:21 [main] INFO  c.t.e.k.p.s.i.TwitterKafkaProducer - Sending message='{"userId": 1417454737356517377, "id": 1595584029197488128, "text": "@sekisei_inka いんかちゃんパソコン強そう！", "createdAt": 1669251851000}' to topic='twitter-topic'
+2022-11-23 20:04:21 [main] INFO  c.t.e.l.TwitterKafkaStatusListener - Received status text RT @AP: Authorities have raised the death toll of a 5.6 magnitude earthquake that shook Indonesia’s main island of Java to at least 268 peo… sending to kafka topic twitter-topic
+2022-11-23 20:04:21 [main] INFO  c.t.e.k.p.s.i.TwitterKafkaProducer - Sending message='{"userId": 768569699466616832, "id": 1595584030283546624, "text": "RT @AP: Authorities have raised the death toll of a 5.6 magnitude earthquake that shook Indonesia\u2019s main island of Java to at least 268 peo\u2026", "createdAt": 1669251851000}' to topic='twitter-topic'
+2022-11-23 20:04:21 [main] INFO  c.t.e.l.TwitterKafkaStatusListener - Received status text RT @LisainNJ: This is the Colorado Spring shooter’s father. He’s giving meth vibes. sending to kafka topic twitter-topic
+2022-11-23 20:04:21 [main] INFO  c.t.e.k.p.s.i.TwitterKafkaProducer - Sending message='{"userId": 301536111, "id": 1595584030883323907, "text": "RT @LisainNJ: This is the Colorado Spring shooter\u2019s father. He\u2019s giving meth vibes.", "createdAt": 1669251852000}' to topic='twitter-topic'
+2022-11-23 20:04:21 [main] INFO  c.t.e.l.TwitterKafkaStatusListener - Received status text RT @U_are_my_spring: 221118 #영탁 탁쇼 서울 앵콜 첫콘
+곶감이다🐯
+주먹 다부지게 쥐고 무표정 뙇! 느므느므 긔여으으흐... 킹받아(? ㅠㅠㅠㅠ https://t.co/6nLux0rqEo sending to kafka topic twitter-topic
+2022-11-23 20:04:21 [main] INFO  c.t.e.k.p.s.i.TwitterKafkaProducer - Sending message='{"userId": 1301910226237419522, "id": 1595584032892506112, "text": "RT @U_are_my_spring: 221118 #영탁 탁쇼 서울 앵콜 첫콘\n곶감이다🐯\n주먹 다부지게 쥐고 무표정 뙇! 느므느므 긔여으으흐... 킹받아(? ㅠㅠㅠㅠ https://t.co/6nLux0rqEo", "createdAt": 1669251852000}' to topic='twitter-topic'
+2022-11-23 20:04:21 [main] INFO  c.t.e.l.TwitterKafkaStatusListener - Received status text RT @JenAFifield: There's a call circulating on far-right channels today for a 9 a.m. Friday protest for a "revote" at the Arizona Capitol.… sending to kafka topic twitter-topic
+2022-11-23 20:04:21 [main] INFO  c.t.e.k.p.s.i.TwitterKafkaProducer - Sending message='{"userId": 108556027, "id": 1595584038663766021, "text": "RT @JenAFifield: There's a call circulating on far-right channels today for a 9 a.m. Friday protest for a \"revote\" at the Arizona Capitol.\u2026", "createdAt": 1669251853000}' to topic='twitter-topic'

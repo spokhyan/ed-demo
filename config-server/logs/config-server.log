@@ -674,3 +674,32 @@ Caused by: org.eclipse.jgit.errors.TransportException: https://github.com/spokhy
 	at org.eclipse.jgit.transport.Transport.fetch(Transport.java:1271)
 	at org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:243)
 	... 83 common frames omitted
+2022-11-23 19:59:11 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2022-11-23 19:59:12 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-11-23 19:59:12 [main] INFO  c.t.ed.config.server.ConfigServer - No active profile set, falling back to default profiles: default
+2022-11-23 19:59:13 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=2d9ac6da-6bb2-314a-952b-2c231e7c87cd
+2022-11-23 19:59:14 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2022-11-23 19:59:14 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2022-11-23 19:59:14 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-11-23 19:59:14 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2022-11-23 19:59:14 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-11-23 19:59:14 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2063 ms
+2022-11-23 19:59:17 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/encrypt/**'] with []
+2022-11-23 19:59:17 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/decrypt/**'] with []
+2022-11-23 19:59:17 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5f0ca069, org.springframework.security.web.context.SecurityContextPersistenceFilter@625db0e0, org.springframework.security.web.header.HeaderWriterFilter@430106cf, org.springframework.security.web.csrf.CsrfFilter@74e2cfc5, org.springframework.security.web.authentication.logout.LogoutFilter@5badeda0, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6604f246, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@62c53685, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6a6a2fdd, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@39004e4f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1805ca5c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@25e796fe, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@552ffa44, org.springframework.security.web.session.SessionManagementFilter@2aac6fa7, org.springframework.security.web.access.ExceptionTranslationFilter@2d8c729f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@177068db]
+2022-11-23 19:59:18 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-11-23 19:59:18 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2022-11-23 19:59:18 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2022-11-23 19:59:18 [main] INFO  c.t.ed.config.server.ConfigServer - Started ConfigServer in 7.994 seconds (JVM running for 9.1)
+2022-11-23 19:59:18 [main] INFO  o.s.b.a.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
+2022-11-23 19:59:18 [main] INFO  o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2022-11-23 20:00:28 [http-nio-8888-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-23 20:00:28 [http-nio-8888-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-11-23 20:00:28 [http-nio-8888-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+2022-11-23 20:00:28 [http-nio-8888-exec-2] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2022-11-23 20:01:30 [http-nio-8888-exec-4] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2022-11-23 20:02:36 [http-nio-8888-exec-7] INFO  o.s.c.c.s.e.EncryptionController - Encrypted data
+2022-11-23 20:02:51 [http-nio-8888-exec-9] INFO  o.s.c.c.s.e.EncryptionController - Decrypted cipher data
+2022-11-23 20:03:08 [http-nio-8888-exec-10] INFO  o.s.c.c.s.e.EncryptionController - Decrypted cipher data
+2022-11-23 20:03:57 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/fx/4f4dpt8j2c97ftsfhc0k6gqw0000gn/T/config-repo-7897398842158840255/config-client-twitter_kafka.yml]' via location 'file:/var/folders/fx/4f4dpt8j2c97ftsfhc0k6gqw0000gn/T/config-repo-7897398842158840255/'
+2022-11-23 20:03:57 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/fx/4f4dpt8j2c97ftsfhc0k6gqw0000gn/T/config-repo-7897398842158840255/config-client.yml]' via location 'file:/var/folders/fx/4f4dpt8j2c97ftsfhc0k6gqw0000gn/T/config-repo-7897398842158840255/'

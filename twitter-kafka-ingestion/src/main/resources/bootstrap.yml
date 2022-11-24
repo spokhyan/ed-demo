@@ -8,4 +8,4 @@ spring:
       name: twitter-kafka-ingestion,config-client
       uri: http://localhost:8888/
       username: ed-cloud-user
-      password: edCloud_Pwd
+      password: '{cipher}064731a77fe6b7ca375155e6e0195460f4d27aef8f0071def483bc840829350d'

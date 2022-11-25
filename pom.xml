@@ -11,6 +11,8 @@
 		<module>kafka/kafka-producer</module>
 		<module>common-config</module>
 		<module>config-server</module>
+		<module>kafka/kafka-consumer</module>
+		<module>kafka-elastic</module>
 	</modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -76,6 +78,11 @@
 			<dependency>
 				<groupId>com.techbytes</groupId>
 				<artifactId>kafka-producer</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.techbytes</groupId>
+				<artifactId>kafka-consumer</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>

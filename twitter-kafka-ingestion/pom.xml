@@ -78,7 +78,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <image>
-                        <name>${project.groupId}/twitter-kafka-ingestion:${project.version}</name>
+                        <name>${project.groupId}/twitter.kafka.ingestion:${project.version}</name>
                     </image>
                 </configuration>
                 <executions>

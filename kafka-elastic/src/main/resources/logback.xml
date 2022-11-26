@@ -3,5 +3,6 @@
     <property name="DEV_HOME" value="./kafka-elastic/logs"/>
     <property name="APP_NAME" value="kafka-elastic"/>
 
-    <include resource="logback-common.xml"/>
+    <include resource="common-logback.xml"/>
+
 </configuration>

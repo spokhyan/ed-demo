@@ -13,7 +13,9 @@
 		<module>config-server</module>
 		<module>kafka/kafka-consumer</module>
 		<module>kafka-elastic</module>
-	</modules>
+        <module>elastic</module>
+        <module>elastic/elastic-index-client</module>
+    </modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
@@ -44,6 +46,7 @@
 		<kafka-avro-serializer.version>5.5.1</kafka-avro-serializer.version>
 		<spring-cloud.version>3.0.2</spring-cloud.version>
 		<spring-cloud-dependencies.version>2020.0.2</spring-cloud-dependencies.version>
+		<elasticsearch.version>7.13.2</elasticsearch.version>
 	</properties>
 
 	<repositories>
@@ -83,6 +86,21 @@
 			<dependency>
 				<groupId>com.techbytes</groupId>
 				<artifactId>kafka-consumer</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.techbytes</groupId>
+				<artifactId>elastic-model</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.techbytes</groupId>
+				<artifactId>elastic-config</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.techbytes</groupId>
+				<artifactId>elastic-index-client</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>
@@ -171,6 +189,18 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-starter-security</artifactId>
 				<version>${springboot.version}</version>
+			</dependency>
+
+			<!-- https://mvnrepository.com/artifact/org.elasticsearch/elasticsearch -->
+			<dependency>
+					<groupId>org.elasticsearch</groupId>
+					<artifactId>elasticsearch</artifactId>
+					<version>${elasticsearch.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.elasticsearch.client</groupId>
+				<artifactId>elasticsearch-rest-high-level-client</artifactId>
+				<version>${elasticsearch.version}</version>
 			</dependency>
 
 			<dependency>

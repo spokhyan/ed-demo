@@ -33,7 +33,7 @@ services:
       - "./docker-logs:/workspace/kafka-elastic/logs"
       - "./kafka-topics-health-check.sh:/usr/local/bin/kafka-topics-health-check.sh"
     user: root
-    entrypoint: [ "config-server-health-check.sh" ]
+    entrypoint: [ "kafka-topics-health-check.sh" ]
     depends_on:
       - config-server
       - twitter-kafka-ingestion

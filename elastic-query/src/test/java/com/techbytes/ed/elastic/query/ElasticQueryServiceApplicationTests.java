@@ -1,4 +1,4 @@
-package com.techbytes.ed.elastic.query.service;
+package com.techbytes.ed.elastic.query;
 
 
 import org.junit.jupiter.api.Test;

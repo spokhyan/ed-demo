@@ -1,4 +1,4 @@
-package com.techbytes.ed.elastic.query.service.config;
+package com.techbytes.ed.elastic.query.config;
 
 import com.techbytes.ed.config.UserConfigData;
 import org.springframework.context.annotation.Bean;

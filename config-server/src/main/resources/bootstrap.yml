@@ -7,7 +7,7 @@ spring:
         git:
           uri: https://github.com/spokhyan/spring-cloud-config-server-repo.git
           username: spokhyan
-          password: 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
+          password: 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
           default-label: master
           clone-on-start: true
       fail-fast: true

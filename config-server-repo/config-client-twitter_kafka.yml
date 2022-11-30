@@ -1,3 +1,6 @@
+server:
+  port: 8181
+
 twitter-kafka-ingestion:
   twitter-keywords:
     - Java
@@ -44,3 +47,9 @@ kafka-producer-config:
   request-timeout-ms: 60000
   retry-count: 5
 
+elastic-config:
+  index-name: twitter-index
+  connection-url: http://localhost:9200
+  connect-timeout-ms: 5000
+  socket-timeout-ms: 30000
+  is-repository: true

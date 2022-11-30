@@ -29,11 +29,19 @@ build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
+
+
 ### VS Code ###
 .vscode/
 
+<<<<<<< HEAD
 ### ignore logs
 **/logs
 
 ### ignore repo
 Config-server-repo
+=======
+
+### Logs
+**/logs
+>>>>>>> 99302b99d0f5f2196a9429c8ccbb64e9c498ff5a

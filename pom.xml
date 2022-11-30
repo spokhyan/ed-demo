@@ -15,7 +15,11 @@
 		<module>kafka-elastic</module>
         <module>elastic</module>
         <module>elastic/elastic-index-client</module>
-    </modules>
+		<module>elastic/elastic-query-client</module>
+        <module>common-util</module>
+		<module>elastic-query</module>
+		<module>elatic-query-web-client</module>
+	</modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
@@ -47,6 +51,7 @@
 		<spring-cloud.version>3.0.2</spring-cloud.version>
 		<spring-cloud-dependencies.version>2020.0.2</spring-cloud-dependencies.version>
 		<elasticsearch.version>7.13.2</elasticsearch.version>
+		<springdoc-openapi-ui.version>1.6.10</springdoc-openapi-ui.version>
 	</properties>
 
 	<repositories>
@@ -104,9 +109,24 @@
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>
+				<groupId>com.techbytes</groupId>
+				<artifactId>elastic-query-client</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.techbytes</groupId>
+				<artifactId>common-util</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-starter</artifactId>
 				<version>${springboot.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springdoc</groupId>
+				<artifactId>springdoc-openapi-ui</artifactId>
+				<version>${springdoc-openapi-ui.version}</version>
 			</dependency>
 
 			<dependency>
@@ -189,6 +209,11 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-starter-security</artifactId>
 				<version>${springboot.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-loadbalancer</artifactId>
+				<version>${spring-cloud.version}</version>
 			</dependency>
 
 			<!-- https://mvnrepository.com/artifact/org.elasticsearch/elasticsearch -->

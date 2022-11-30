@@ -6387,3 +6387,358 @@ Using generated security password: 06343789-d54e-4d16-9b0e-193454f53213
 2022-11-23 20:04:21 [main] INFO  c.t.e.k.p.s.i.TwitterKafkaProducer - Sending message='{"userId": 1301910226237419522, "id": 1595584032892506112, "text": "RT @U_are_my_spring: 221118 #영탁 탁쇼 서울 앵콜 첫콘\n곶감이다🐯\n주먹 다부지게 쥐고 무표정 뙇! 느므느므 긔여으으흐... 킹받아(? ㅠㅠㅠㅠ https://t.co/6nLux0rqEo", "createdAt": 1669251852000}' to topic='twitter-topic'
 2022-11-23 20:04:21 [main] INFO  c.t.e.l.TwitterKafkaStatusListener - Received status text RT @JenAFifield: There's a call circulating on far-right channels today for a 9 a.m. Friday protest for a "revote" at the Arizona Capitol.… sending to kafka topic twitter-topic
 2022-11-23 20:04:21 [main] INFO  c.t.e.k.p.s.i.TwitterKafkaProducer - Sending message='{"userId": 108556027, "id": 1595584038663766021, "text": "RT @JenAFifield: There's a call circulating on far-right channels today for a 9 a.m. Friday protest for a \"revote\" at the Arizona Capitol.\u2026", "createdAt": 1669251853000}' to topic='twitter-topic'
+2022-11-28 21:23:52 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-11-28 21:23:52 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888/
+2022-11-28 21:23:53 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=twitter-kafka-ingestion,config-client, profiles=[twitter_kafka], label=null, version=75d54e6f66044bc393e3299356d39c60ffafb80d, state=null
+2022-11-28 21:23:53 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/spokhyan/spring-cloud-config-server-repo.git/config-client-twitter_kafka.yml'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/spokhyan/spring-cloud-config-server-repo.git/config-client.yml'}]
+2022-11-28 21:23:53 [main] INFO  c.t.e.s.TwitterKafkaIngestionApplication - The following profiles are active: twitter_kafka
+2022-11-28 21:23:53 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-11-28 21:23:53 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 103 ms. Found 1 Elasticsearch repository interfaces.
+2022-11-28 21:23:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2022-11-28 21:23:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2022-11-28 21:23:54 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=4723b93a-af2d-32a3-9824-9c8e39212edb
+2022-11-28 21:23:54 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-28 21:23:54 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 127000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2022-11-28 21:23:54 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.7.1
+2022-11-28 21:23:54 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 61dbce85d0d41457
+2022-11-28 21:23:54 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1669688634390
+2022-11-28 21:23:54 [main] INFO  c.t.e.e.config.ElasticSearchConfig - Inside ElasticSearchConfig Constructor ...
+2022-11-28 21:23:54 [main] INFO  c.t.e.e.config.ElasticSearchConfig - Inside ElasticSearchConfig Constructor ... exiting
+2022-11-28 21:23:54 [main] INFO  c.t.e.e.config.ElasticSearchConfig - RestHighLevelClient.serverUri http://localhost:9200
+2022-11-28 21:23:54 [main] WARN  org.elasticsearch.client.RestClient - request [GET http://localhost:9200/] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2022-11-28 21:23:54 [main] INFO  o.s.d.e.support.VersionInfo - Version Spring Data Elasticsearch: 4.2.1
+2022-11-28 21:23:54 [main] INFO  o.s.d.e.support.VersionInfo - Version Elasticsearch Client in build: 7.12.1
+2022-11-28 21:23:54 [main] INFO  o.s.d.e.support.VersionInfo - Version Elasticsearch Client used: 7.13.2
+2022-11-28 21:23:54 [main] WARN  o.s.d.e.support.VersionInfo - Version mismatch in between Elasticsearch Clients build/use: 7.12.1 - 7.13.2
+2022-11-28 21:23:54 [main] INFO  o.s.d.e.support.VersionInfo - Version Elasticsearch cluster: 7.13.2
+2022-11-28 21:23:55 [main] WARN  org.elasticsearch.client.RestClient - request [HEAD http://localhost:9200/twitter-index?ignore_throttled=false&ignore_unavailable=false&expand_wildcards=open%2Cclosed&allow_no_indices=false] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2022-11-28 21:23:55 [main] WARN  org.elasticsearch.client.RestClient - request [PUT http://localhost:9200/twitter-index?master_timeout=30s&timeout=30s] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2022-11-28 21:23:55 [main] INFO  o.s.b.a.s.r.ReactiveUserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 00d6a4c4-62e5-4559-a4b5-51d4b3fb8be3
+
+2022-11-28 21:23:56 [main] ERROR i.n.r.d.DnsServerAddressStreamProviders - Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS.
+java.lang.reflect.InvocationTargetException: null
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at io.netty.resolver.dns.DnsServerAddressStreamProviders.<clinit>(DnsServerAddressStreamProviders.java:64)
+	at io.netty.resolver.dns.DnsNameResolverBuilder.<init>(DnsNameResolverBuilder.java:60)
+	at reactor.netty.transport.NameResolverProvider.newNameResolverGroup(NameResolverProvider.java:432)
+	at reactor.netty.tcp.TcpResources.getOrCreateDefaultResolver(TcpResources.java:306)
+	at reactor.netty.http.HttpResources.getOrCreateDefaultResolver(HttpResources.java:140)
+	at reactor.netty.http.client.HttpClientConfig.defaultAddressResolverGroup(HttpClientConfig.java:382)
+	at reactor.netty.transport.ClientTransportConfig.resolverInternal(ClientTransportConfig.java:219)
+	at reactor.netty.http.client.HttpClientConfig.resolverInternal(HttpClientConfig.java:436)
+	at reactor.netty.http.client.HttpClientConnect$MonoHttpConnect.lambda$subscribe$0(HttpClientConnect.java:265)
+	at reactor.core.publisher.MonoCreate.subscribe(MonoCreate.java:57)
+	at reactor.core.publisher.FluxRetryWhen.subscribe(FluxRetryWhen.java:76)
+	at reactor.core.publisher.MonoRetryWhen.subscribeOrReturn(MonoRetryWhen.java:46)
+	at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:57)
+	at reactor.netty.http.client.HttpClientConnect$MonoHttpConnect.subscribe(HttpClientConnect.java:272)
+	at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+	at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52)
+	at reactor.core.publisher.FluxFromMonoOperator.subscribe(FluxFromMonoOperator.java:83)
+	at reactor.core.publisher.FluxDefer.subscribe(FluxDefer.java:54)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4150)
+	at reactor.core.publisher.Mono.subscribeWith(Mono.java:4265)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:3982)
+	at org.springframework.data.elasticsearch.core.ReactiveElasticsearchTemplate.logVersions(ReactiveElasticsearchTemplate.java:162)
+	at org.springframework.data.elasticsearch.core.ReactiveElasticsearchTemplate.<init>(ReactiveElasticsearchTemplate.java:145)
+	at org.springframework.boot.autoconfigure.data.elasticsearch.ElasticsearchDataConfiguration$ReactiveRestClientConfiguration.reactiveElasticsearchTemplate(ElasticsearchDataConfiguration.java:108)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:64)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:438)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:337)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1336)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1325)
+	at com.techbytes.ed.services.TwitterKafkaIngestionApplication.main(TwitterKafkaIngestionApplication.java:35)
+Caused by: java.lang.UnsatisfiedLinkError: 'io.netty.resolver.dns.macos.DnsResolver[] io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider.resolvers()'
+	at io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider.resolvers(Native Method)
+	at io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider.retrieveCurrentMappings(MacOSDnsServerAddressStreamProvider.java:127)
+	at io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider.<init>(MacOSDnsServerAddressStreamProvider.java:123)
+	... 53 common frames omitted
+2022-11-28 21:23:56 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port 8181
+2022-11-28 21:23:56 [main] INFO  c.t.e.s.TwitterKafkaIngestionApplication - Started TwitterKafkaIngestionApplication in 4.454 seconds (JVM running for 4.926)
+2022-11-28 21:23:56 [main] INFO  o.s.b.a.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
+2022-11-28 21:23:56 [main] INFO  c.t.e.s.TwitterKafkaIngestionApplication - Application started ...
+2022-11-28 21:23:56 [main] INFO  c.t.e.k.a.c.client.KafkaAdminClient - Creating 1 topics(s), attempt 0
+2022-11-28 21:23:58 [main] INFO  c.t.e.i.impl.KafkaStreamInitializer - Topics with name twitter-topic is ready for operations!
+2022-11-28 21:23:58 [main] INFO  c.t.e.r.i.TwitterV2KafkaStreamRunner - twitterConfigData.Welcome to Twitter Ingestion!!
+2022-11-28 21:23:58 [main] INFO  c.t.e.r.i.TwitterV2KafkaStreamRunner - bearerToken: AAAAAAAAAAAAAAAAAAAAAEzJiwEAAAAATgOuimAT5naVv4ucCWD1xFmPr%2FA%3Di7HkSnHG3naZ6cQPmQd6pM20oS$
+2022-11-28 21:23:58 [main] INFO  c.t.e.r.i.TwitterV2KafkaStreamRunner - Filter created for twittwr keywords: [Java, Spring, Microservices, Kafka, Elasticsearch]
+2022-11-28 21:23:58 [main] INFO  c.t.e.r.i.TwitterV2KafkaStreamRunner - Filter created for twittwr keywords: {Java=keyword: Java, Elasticsearch=keyword: Elasticsearch, Kafka=keyword: Kafka, Spring=keyword: Spring, Microservices=keyword: Microservices}
+2022-11-28 21:23:59 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-11-28 21:23:59 [main] INFO  o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed to REFUSING_TRAFFIC
+2022-11-28 21:23:59 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.admin.client for adminclient-1 unregistered
+2022-11-28 21:23:59 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2022-11-28 21:23:59 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2022-11-28 21:23:59 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2022-11-28 21:23:59 [main] INFO  c.t.e.k.p.s.i.TwitterKafkaProducer - Closing kafka producer!
+2022-11-28 21:23:59 [reactor-http-nio-4] WARN  r.n.http.client.HttpClientConnect - [id:41b9b12f-1, L:0.0.0.0/0.0.0.0:53135] The connection observed an error
+reactor.netty.http.client.PrematureCloseException: Connection prematurely closed DURING response
+2022-11-28 21:24:01 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:344)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1336)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1325)
+	at com.techbytes.ed.services.TwitterKafkaIngestionApplication.main(TwitterKafkaIngestionApplication.java:35)
+Caused by: org.json.JSONException: JSONObject["data"] not found.
+	at org.json.JSONObject.get(JSONObject.java:580)
+	at com.techbytes.ed.runner.impl.TwitterV2StreamHelper.getRules(TwitterV2StreamHelper.java:168)
+	at com.techbytes.ed.runner.impl.TwitterV2StreamHelper.setupRules(TwitterV2StreamHelper.java:107)
+	at com.techbytes.ed.runner.impl.TwitterV2KafkaStreamRunner.start(TwitterV2KafkaStreamRunner.java:38)
+	at com.techbytes.ed.services.TwitterKafkaIngestionApplication.run(TwitterKafkaIngestionApplication.java:44)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:795)
+	... 5 common frames omitted
+2022-11-28 21:32:14 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2022-11-28 21:32:14 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888/
+2022-11-28 21:32:16 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=twitter-kafka-ingestion,config-client, profiles=[twitter_kafka], label=null, version=75d54e6f66044bc393e3299356d39c60ffafb80d, state=null
+2022-11-28 21:32:16 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/spokhyan/spring-cloud-config-server-repo.git/config-client-twitter_kafka.yml'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/spokhyan/spring-cloud-config-server-repo.git/config-client.yml'}]
+2022-11-28 21:32:16 [main] INFO  c.t.e.s.TwitterKafkaIngestionApplication - The following profiles are active: twitter_kafka
+2022-11-28 21:32:16 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-11-28 21:32:16 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 116 ms. Found 1 Elasticsearch repository interfaces.
+2022-11-28 21:32:16 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2022-11-28 21:32:16 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2022-11-28 21:32:16 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=4723b93a-af2d-32a3-9824-9c8e39212edb
+2022-11-28 21:32:16 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-11-28 21:32:17 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 127000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2022-11-28 21:32:17 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.7.1
+2022-11-28 21:32:17 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 61dbce85d0d41457
+2022-11-28 21:32:17 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1669689137116
+2022-11-28 21:32:17 [main] INFO  c.t.e.e.config.ElasticSearchConfig - Inside ElasticSearchConfig Constructor ...
+2022-11-28 21:32:17 [main] INFO  c.t.e.e.config.ElasticSearchConfig - Inside ElasticSearchConfig Constructor ... exiting
+2022-11-28 21:32:17 [main] INFO  c.t.e.e.config.ElasticSearchConfig - RestHighLevelClient.serverUri http://localhost:9200
+2022-11-28 21:32:17 [main] WARN  org.elasticsearch.client.RestClient - request [GET http://localhost:9200/] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2022-11-28 21:32:17 [main] INFO  o.s.d.e.support.VersionInfo - Version Spring Data Elasticsearch: 4.2.1
+2022-11-28 21:32:17 [main] INFO  o.s.d.e.support.VersionInfo - Version Elasticsearch Client in build: 7.12.1
+2022-11-28 21:32:17 [main] INFO  o.s.d.e.support.VersionInfo - Version Elasticsearch Client used: 7.13.2
+2022-11-28 21:32:17 [main] WARN  o.s.d.e.support.VersionInfo - Version mismatch in between Elasticsearch Clients build/use: 7.12.1 - 7.13.2
+2022-11-28 21:32:17 [main] INFO  o.s.d.e.support.VersionInfo - Version Elasticsearch cluster: 7.13.2
+2022-11-28 21:32:17 [main] WARN  org.elasticsearch.client.RestClient - request [HEAD http://localhost:9200/twitter-index?ignore_throttled=false&ignore_unavailable=false&expand_wildcards=open%2Cclosed&allow_no_indices=false] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2022-11-28 21:32:17 [main] INFO  o.s.b.a.s.r.ReactiveUserDetailsServiceAutoConfiguration - 
+
+Using generated security password: e26b9da4-8089-4d3c-9a08-cd6e9fc11975
+
+2022-11-28 21:32:18 [main] ERROR i.n.r.d.DnsServerAddressStreamProviders - Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS.
+java.lang.reflect.InvocationTargetException: null
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at io.netty.resolver.dns.DnsServerAddressStreamProviders.<clinit>(DnsServerAddressStreamProviders.java:64)
+	at io.netty.resolver.dns.DnsNameResolverBuilder.<init>(DnsNameResolverBuilder.java:60)
+	at reactor.netty.transport.NameResolverProvider.newNameResolverGroup(NameResolverProvider.java:432)
+	at reactor.netty.tcp.TcpResources.getOrCreateDefaultResolver(TcpResources.java:306)
+	at reactor.netty.http.HttpResources.getOrCreateDefaultResolver(HttpResources.java:140)
+	at reactor.netty.http.client.HttpClientConfig.defaultAddressResolverGroup(HttpClientConfig.java:382)
+	at reactor.netty.transport.ClientTransportConfig.resolverInternal(ClientTransportConfig.java:219)
+	at reactor.netty.http.client.HttpClientConfig.resolverInternal(HttpClientConfig.java:436)
+	at reactor.netty.http.client.HttpClientConnect$MonoHttpConnect.lambda$subscribe$0(HttpClientConnect.java:265)
+	at reactor.core.publisher.MonoCreate.subscribe(MonoCreate.java:57)
+	at reactor.core.publisher.FluxRetryWhen.subscribe(FluxRetryWhen.java:76)
+	at reactor.core.publisher.MonoRetryWhen.subscribeOrReturn(MonoRetryWhen.java:46)
+	at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:57)
+	at reactor.netty.http.client.HttpClientConnect$MonoHttpConnect.subscribe(HttpClientConnect.java:272)
+	at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+	at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52)
+	at reactor.core.publisher.FluxFromMonoOperator.subscribe(FluxFromMonoOperator.java:83)
+	at reactor.core.publisher.FluxDefer.subscribe(FluxDefer.java:54)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4150)
+	at reactor.core.publisher.Mono.subscribeWith(Mono.java:4265)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:3982)
+	at org.springframework.data.elasticsearch.core.ReactiveElasticsearchTemplate.logVersions(ReactiveElasticsearchTemplate.java:162)
+	at org.springframework.data.elasticsearch.core.ReactiveElasticsearchTemplate.<init>(ReactiveElasticsearchTemplate.java:145)
+	at org.springframework.boot.autoconfigure.data.elasticsearch.ElasticsearchDataConfiguration$ReactiveRestClientConfiguration.reactiveElasticsearchTemplate(ElasticsearchDataConfiguration.java:108)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:64)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:438)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:337)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1336)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1325)
+	at com.techbytes.ed.services.TwitterKafkaIngestionApplication.main(TwitterKafkaIngestionApplication.java:35)
+Caused by: java.lang.UnsatisfiedLinkError: 'io.netty.resolver.dns.macos.DnsResolver[] io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider.resolvers()'
+	at io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider.resolvers(Native Method)
+	at io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider.retrieveCurrentMappings(MacOSDnsServerAddressStreamProvider.java:127)
+	at io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider.<init>(MacOSDnsServerAddressStreamProvider.java:123)
+	... 53 common frames omitted
+2022-11-28 21:32:18 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port 8181
+2022-11-28 21:32:18 [main] INFO  c.t.e.s.TwitterKafkaIngestionApplication - Started TwitterKafkaIngestionApplication in 4.96 seconds (JVM running for 5.555)
+2022-11-28 21:32:18 [main] INFO  o.s.b.a.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
+2022-11-28 21:32:18 [main] INFO  c.t.e.s.TwitterKafkaIngestionApplication - Application started ...
+2022-11-28 21:32:18 [main] INFO  c.t.e.k.a.c.client.KafkaAdminClient - Creating 1 topics(s), attempt 0
+2022-11-28 21:32:32 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-11-28 21:32:32 [main] INFO  o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed to REFUSING_TRAFFIC
+2022-11-28 21:32:32 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.admin.client for adminclient-1 unregistered
+2022-11-28 21:32:32 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2022-11-28 21:32:32 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2022-11-28 21:32:32 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2022-11-28 21:32:32 [main] INFO  c.t.e.k.p.s.i.TwitterKafkaProducer - Closing kafka producer!
+2022-11-28 21:32:34 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:344)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1336)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1325)
+	at com.techbytes.ed.services.TwitterKafkaIngestionApplication.main(TwitterKafkaIngestionApplication.java:35)
+Caused by: com.techbytes.ed.kafka.admin.exception.KafkaClientException: null
+	at com.techbytes.ed.kafka.admin.config.client.KafkaAdminClient.checkMaxRetry(KafkaAdminClient.java:72)
+	at com.techbytes.ed.kafka.admin.config.client.KafkaAdminClient.checkSchemaRegistry(KafkaAdminClient.java:106)
+	at com.techbytes.ed.init.impl.KafkaStreamInitializer.init(KafkaStreamInitializer.java:26)
+	at com.techbytes.ed.services.TwitterKafkaIngestionApplication.run(TwitterKafkaIngestionApplication.java:43)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:795)
+	... 5 common frames omitted

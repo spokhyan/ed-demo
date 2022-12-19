@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: kafka-stream
+  profiles:
+    active: kafka_stream
+  cloud:
+    config:
+      name: kafka-stream,config-client
+      uri: http://localhost:8888
+      username: ed-cloud-user
+      password: '{cipher}08ba5a6ab28b0db8fde758816cdd67936b4e712ae8193a9c9f6e966750cf1007'

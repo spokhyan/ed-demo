@@ -2,8 +2,10 @@ package com.techbytes.ed.elastic.query.model.assembler;
 
 import com.techbytes.ed.elastic.model.impl.TwitterIndexModelImpl;
 import com.techbytes.ed.elastic.query.controller.ElasticDocumentController;
-import com.techbytes.ed.elastic.query.model.ElasticQueryServiceResponseModel;
-import com.techbytes.ed.elastic.query.transformer.ElasticToResponseModelTransformer;
+
+import com.techbytes.ed.elastic.query.service.common.model.ElasticQueryServiceResponseModel;
+import com.techbytes.ed.elastic.query.service.common.transformer.ElasticToResponseModelTransformer;
+
 import org.springframework.hateoas.server.mvc.RepresentationModelAssemblerSupport;
 import org.springframework.stereotype.Component;
 

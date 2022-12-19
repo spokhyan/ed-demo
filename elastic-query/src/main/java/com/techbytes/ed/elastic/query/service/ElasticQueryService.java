@@ -1,7 +1,8 @@
 package com.techbytes.ed.elastic.query.service;
 
 
-import com.techbytes.ed.elastic.query.model.ElasticQueryServiceResponseModel;
+
+import com.techbytes.ed.elastic.query.service.common.model.ElasticQueryServiceResponseModel;
 
 import java.util.List;
 

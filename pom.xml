@@ -19,7 +19,12 @@
         <module>common-util</module>
 		<module>elastic-query</module>
 		<module>elatic-query-web-client</module>
-	</modules>
+		<module>elastic-query-service-common</module>
+        <module>elastic-query-web-client-common</module>
+        <module>elastic-reactive-query</module>
+        <module>elatic-query-web-client-2</module>
+        <module>kafka-stream</module>
+    </modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
@@ -53,6 +58,7 @@
 		<elasticsearch.version>7.13.2</elasticsearch.version>
 		<springdoc-openapi-ui.version>1.6.10</springdoc-openapi-ui.version>
 		<postgresql.version>42.3.1</postgresql.version>
+		<kafka-stream.version>2.6.2</kafka-stream.version>
 	</properties>
 
 	<repositories>
@@ -117,6 +123,16 @@
 			<dependency>
 				<groupId>com.techbytes</groupId>
 				<artifactId>common-util</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.techbytes</groupId>
+				<artifactId>elastic-query-service-common</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.techbytes</groupId>
+				<artifactId>elastic-query-web-client-common</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>
@@ -212,6 +228,11 @@
 				<version>${springboot.version}</version>
 			</dependency>
 			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-oauth2-client</artifactId>
+				<version>${springboot.version}</version>
+			</dependency>
+			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-loadbalancer</artifactId>
 				<version>${spring-cloud.version}</version>
@@ -232,6 +253,24 @@
 				<groupId>org.elasticsearch.client</groupId>
 				<artifactId>elasticsearch-rest-high-level-client</artifactId>
 				<version>${elasticsearch.version}</version>
+			</dependency>
+
+			<!-- kafka stream module related dependencies -->
+
+			<dependency>
+				<groupId>org.apache.kafka</groupId>
+				<artifactId>kafka-streams</artifactId>
+				<version>${kafka-stream.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.kafka</groupId>
+				<artifactId>kafka-clients</artifactId>
+				<version>${kafka-stream.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.confluent</groupId>
+				<artifactId>kafka-streams-avro-serde</artifactId>
+				<version>${kafka-avro-serializer.version}</version>
 			</dependency>
 
 			<dependency>

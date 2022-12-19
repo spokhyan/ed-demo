@@ -1,0 +1,7 @@
+2022-12-01 00:04:27 [http-nio-8183-exec-1] INFO  o.a.c.c.C.[.[.[/elastic-query-service] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-01 00:04:27 [http-nio-8183-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-12-01 00:04:27 [http-nio-8183-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2022-12-01 00:04:28 [http-nio-8183-exec-1] INFO  c.t.e.e.q.s.i.TwitterElasticQueryService - Querying elasticsearch by text test
+2022-12-01 00:04:28 [http-nio-8183-exec-1] WARN  org.elasticsearch.client.RestClient - request [POST http://elastic-1:9200/twitter-index/_search?typed_keys=true&max_concurrent_shard_requests=5&ignore_unavailable=false&expand_wildcards=open&allow_no_indices=true&ignore_throttled=true&search_type=dfs_query_then_fetch&batched_reduce_size=512&ccs_minimize_roundtrips=true] returned 1 warnings: [299 Elasticsearch-7.13.2-4d960a0733be83dd2543ca018aa4ddc42e956800 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.13/security-minimal-setup.html to enable security."]
+2022-12-01 00:04:28 [http-nio-8183-exec-1] INFO  c.t.e.e.q.c.s.i.TwitterElasticRepositoryQueryClient - 0 of documents with text test retrieved successfully
+2022-12-01 00:04:28 [http-nio-8183-exec-1] INFO  c.t.e.e.q.c.ElasticDocumentController - Elasticsearch returned 0 of documents

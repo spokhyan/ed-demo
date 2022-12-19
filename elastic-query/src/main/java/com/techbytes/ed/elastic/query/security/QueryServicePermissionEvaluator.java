@@ -1,8 +1,9 @@
 package com.techbytes.ed.elastic.query.security;
 
 
-import com.techbytes.ed.elastic.query.model.ElasticQueryServiceRequestModel;
-import com.techbytes.ed.elastic.query.model.ElasticQueryServiceResponseModel;
+
+import com.techbytes.ed.elastic.query.service.common.model.ElasticQueryServiceRequestModel;
+import com.techbytes.ed.elastic.query.service.common.model.ElasticQueryServiceResponseModel;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.PermissionEvaluator;
 import org.springframework.security.core.Authentication;

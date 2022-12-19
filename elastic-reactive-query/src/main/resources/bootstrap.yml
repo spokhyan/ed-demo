@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: elastic-reactive-query
+  profiles:
+    active: elastic_reactive_query
+  cloud:
+    config:
+      name: elastic-reactive-query,config-client
+      uri: http://localhost:8888
+      username: ed-cloud-user
+      password: '{cipher}064731a77fe6b7ca375155e6e0195460f4d27aef8f0071def483bc840829350d'

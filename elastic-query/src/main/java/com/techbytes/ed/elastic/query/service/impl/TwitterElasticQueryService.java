@@ -3,10 +3,11 @@ package com.techbytes.ed.elastic.query.service.impl;
 
 import com.techbytes.ed.elastic.model.impl.TwitterIndexModelImpl;
 import com.techbytes.ed.elastic.query.client.service.ElasticQueryClient;
-import com.techbytes.ed.elastic.query.model.ElasticQueryServiceResponseModel;
+
 import com.techbytes.ed.elastic.query.model.assembler.ElasticQueryServiceResponseModelAssembler;
 import com.techbytes.ed.elastic.query.service.ElasticQueryService;
-import com.techbytes.ed.elastic.query.transformer.ElasticToResponseModelTransformer;
+import com.techbytes.ed.elastic.query.service.common.model.ElasticQueryServiceResponseModel;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;

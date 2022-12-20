@@ -21,8 +21,9 @@
     <dependencies>
         <dependency>
             <groupId>com.techbytes</groupId>
-            <artifactId>kafka-consumer</artifactId>
+            <artifactId>ed-app-config</artifactId>
         </dependency>
+
         <dependency>
             <groupId>com.techbytes</groupId>
             <artifactId>kafka-admin</artifactId>
@@ -31,18 +32,8 @@
             <groupId>com.techbytes</groupId>
             <artifactId>kafka-model</artifactId>
         </dependency>
-        <dependency>
-            <groupId>com.techbytes</groupId>
-            <artifactId>elastic-model</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.techbytes</groupId>
-            <artifactId>elastic-config</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.techbytes</groupId>
-            <artifactId>elastic-index-client</artifactId>
-        </dependency>
+
+
         <dependency>
             <groupId>org.apache.kafka</groupId>
             <artifactId>kafka-streams</artifactId>

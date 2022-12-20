@@ -8,6 +8,10 @@ kafka-config:
   topic-name: twitter-topic
   topics:
     - twitter-topic
+    - twitter-analytics-topic
+  partition-count: 3
+  replication-factor: 3
+
 
 kafka-consumer-config:
   key-deserializer: org.apache.kafka.common.serialization.LongDeserializer

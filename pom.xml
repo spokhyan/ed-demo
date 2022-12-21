@@ -24,6 +24,7 @@
         <module>elastic-reactive-query</module>
         <module>elatic-query-web-client-2</module>
         <module>kafka-stream</module>
+        <module>analytics-service</module>
     </modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>

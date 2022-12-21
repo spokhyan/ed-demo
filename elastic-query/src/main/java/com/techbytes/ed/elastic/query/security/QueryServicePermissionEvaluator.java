@@ -2,6 +2,7 @@ package com.techbytes.ed.elastic.query.security;
 
 
 
+import com.techbytes.ed.elastic.query.model.ElasticQueryServiceAnalyticsResponseModel;
 import com.techbytes.ed.elastic.query.service.common.model.ElasticQueryServiceRequestModel;
 import com.techbytes.ed.elastic.query.service.common.model.ElasticQueryServiceResponseModel;
 import org.springframework.http.ResponseEntity;
@@ -39,10 +40,10 @@ public class QueryServicePermissionEvaluator implements PermissionEvaluator {
             if (targetDomain == null) {
                 return true;
             }
-            List<ElasticQueryServiceResponseModel> responseBody =
-                    ((ResponseEntity<List<ElasticQueryServiceResponseModel>>) targetDomain).getBody();
+            ElasticQueryServiceAnalyticsResponseModel responseBody =
+                    ((ResponseEntity<ElasticQueryServiceAnalyticsResponseModel>) targetDomain).getBody();
             Objects.requireNonNull(responseBody);
-            return postAuthorize(authentication, responseBody, permission);
+            return postAuthorize(authentication, responseBody.getQueryResponseModels(), permission);
         }
         return false;
     }
